@@ -65,11 +65,11 @@ public class BulkEmailServiceRabbitMQ {
         String time = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         message.setText(emailRequest.body() + "\n\nSent Time: " + time);
 
-        // --- heavy work
+        // heavy work
         Thread.sleep(1000);
 
         // In production, mailSender.send(message) throws MailException if it fails
-        // mailSender.send(message);
+         mailSender.send(message);
 
         log.debug("Draft message ready for: {}", emailRequest.to());
     }

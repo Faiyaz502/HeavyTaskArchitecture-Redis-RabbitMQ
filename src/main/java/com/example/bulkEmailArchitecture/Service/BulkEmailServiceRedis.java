@@ -100,7 +100,7 @@ public class BulkEmailServiceRedis {
         message.setSentDate(date);
 
 
-//        mailSender.send(message); // for Real Email Send
+        mailSender.send(message); // for Real Email Send
 
         Thread.sleep(1000);
 
