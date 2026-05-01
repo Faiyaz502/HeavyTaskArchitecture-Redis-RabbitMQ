@@ -1,4 +1,4 @@
-# 🚀 Bulk Email Architecture: Resilient & Decoupled Background Processing
+# Bulk Email Architecture: Resilient & Decoupled Background Processing
 
 This project demonstrates a production-grade **Decoupled Background Task Architecture** built with **Spring Boot 3**, **RabbitMQ**, and **Redis**. It solves the common backend bottleneck of API latency during heavy workloads (like bulk emailing) by transitioning from synchronous execution to an asynchronous, event-driven pattern.
 
